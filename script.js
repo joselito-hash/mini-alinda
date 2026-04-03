@@ -99,7 +99,7 @@ document.querySelector('.heart').addEventListener('click', function () {
 });
 
 // â”€â”€â”€ Countdown display â”€â”€â”€
-var x = setInterval(function () {
+function actualizarCountdown() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
 
@@ -130,5 +130,7 @@ var x = setInterval(function () {
     miniTimer.textContent = texto;
   }
 
-}, 1000);
+}
 
+actualizarCountdown();
+var x = setInterval(actualizarCountdown, 1000);

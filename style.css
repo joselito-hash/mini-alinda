@@ -9,6 +9,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     overflow-x: hidden;
+    position: relative;
     background-image: url('https://img.freepik.com/vector-gratis/tema-san-valentin-corazones-cielo-rosa_1308-38030.jpg?t=st=1731717320~exp=1731720920~hmac=4642ed233281a4f8a6b2494d2933d447c4454be386a77fe35f6f8cca2ea62df6&w=1060');
     background-size: cover; 
     background-position: center; 
@@ -17,6 +18,25 @@ body {
     transition: background-color 0.5s ease;
     background-size: 120%;
     animation: fanimado 45s infinite; 
+}
+
+.mail-layout {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: clamp(72px, 12vh, 110px) 16px 36px;
+    box-sizing: border-box;
+}
+
+.mail-scene {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    max-width: 100%;
 }
 
 @keyframes animat {
@@ -36,7 +56,7 @@ body {
     border-radius: 12px 20px 60px 20px;
     width:120px;
     height:50px;
-    margin-top:80px;
+    top: 80px;
     position:absolute;
 }
 
@@ -124,10 +144,10 @@ body {
     height: 100px;
     margin-left:-50px;
     left:50%;
+    top: 60px;
     animation: heart 1s infinite;
     transform:scale(.8);
     transition:.6s;
-    margin-top:60px;
     cursor: pointer;
 }
 
@@ -161,9 +181,12 @@ body {
 /* envelope */
 #envelope {
     background: white; 
-    margin: 200px auto;
     height: 200px;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
     width: 320px;
     border-radius:8px;
     overflow:hidden;
@@ -204,7 +227,9 @@ body {
     color: crimson;
     font-size: 26px;
     text-align: center;
-    margin-top: -150px;
+    width: min(100%, 360px);
+    min-height: 72px;
+    margin-top: 18px;
     padding: 0 16px;
     box-sizing: border-box;
     line-height: 1.4;
@@ -344,89 +369,47 @@ body {
 
 /* responsive */
 @media (max-width: 768px) {
-    .wing { width: 100px; height: 40px; }
-    .right { transform: rotate(-10deg) translate(200px,0); }
-    .left { transform: rotate(10deg) translate(-200px, 0); }
-    .heart { width: 100px; height: 80px; margin-left: -40px; }
-    #envelope { width: 260px; height: 160px; margin: 150px auto; }
-    #countdown { font-size: 22px; }
+    .mail-layout { padding-top: clamp(64px, 10vh, 88px); }
+    .mail-scene { width: 260px; height: 240px; }
+    .wing { width: 100px; height: 40px; top: 62px; }
+    .right { margin-left: -50px; transform: rotate(-10deg) translate(200px,0); }
+    .left { margin-left: -50px; transform: rotate(10deg) translate(-200px, 0); }
+    .heart { width: 100px; height: 80px; margin-left: -40px; top: 48px; }
+    #envelope { width: 260px; height: 160px; }
+    #countdown { font-size: 22px; margin-top: 14px; min-height: 64px; }
     .countdown-tiempo { font-size: 26px; }
 }
 
 @media (max-width: 480px) {
-    .wing { width: 80px; height: 30px; margin-top: 60px; }
-    .right { transform: rotate(-10deg) translate(150px,0); }
-    .left { transform: rotate(10deg) translate(-150px, 0); }
-    .heart { width: 80px; height: 60px; margin-left: -30px; }
-    #envelope { width: 200px; height: 140px; margin: 100px auto; }
-    #countdown { font-size: 18px; }
-    .countdown-tiempo { font-size: 22px; }
+    body {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    .mail-layout {
+        padding-top: max(52px, calc(env(safe-area-inset-top) + 24px));
+        padding-bottom: max(24px, calc(env(safe-area-inset-bottom) + 24px));
+    }
+
+    .mail-scene { width: 220px; height: 200px; }
+    .wing { width: 84px; height: 32px; top: 48px; }
+    .right { margin-left: -42px; transform: rotate(-10deg) translate(156px,0); }
+    .left { margin-left: -42px; transform: rotate(10deg) translate(-154px, 0); }
+    .heart { width: 82px; height: 64px; margin-left: -31px; top: 40px; }
+    .heart:before,
+    .heart:after { width: 40px; height: 62px; left: 40px; }
+    .heart:after { left: 0; }
+    #envelope { width: 220px; height: 140px; }
+    #countdown { font-size: 18px; min-height: 56px; margin-top: 12px; padding: 0 8px; }
+    .countdown-label { font-size: 15px; }
+    .countdown-tiempo { font-size: 22px; line-height: 1.25; }
+    .carta-lista { font-size: 20px; }
     #mensaje-romantico { font-size: 22px; }
 }
 
 @media (max-width: 430px) and (max-height: 900px) and (orientation: portrait) {
-    body {
-        background-size: cover;
-        background-position: center top;
-    }
-
-    .wing {
-        width: 92px;
-        height: 34px;
-        margin-top: 68px;
-    }
-
-    .right {
-        margin-left: -46px;
-        transform: rotate(-10deg) translate(164px, 0);
-    }
-
-    .left {
-        margin-left: -46px;
-        transform: rotate(10deg) translate(-162px, 0);
-    }
-
-    .heart {
-        width: 90px;
-        height: 70px;
-        margin-left: -35px;
-        margin-top: 68px;
-    }
-
-    .heart:before,
-    .heart:after {
-        width: 44px;
-        height: 68px;
-        left: 44px;
-    }
-
-    .heart:after {
-        left: 0;
-    }
-
-    #envelope {
-        width: 230px;
-        height: 150px;
-        margin: 126px auto 0;
-    }
-
-    #countdown {
-        margin-top: -104px;
-        font-size: 18px;
-        padding: 0 20px;
-    }
-
-    .countdown-label {
-        font-size: 15px;
-    }
-
-    .countdown-tiempo {
-        font-size: 24px;
-        line-height: 1.25;
-    }
-
-    .carta-lista {
-        font-size: 20px;
+    .mail-layout {
+        padding-top: max(56px, calc(env(safe-area-inset-top) + 28px));
     }
 
     .modal-contenido {
