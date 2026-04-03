@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     overflow-x: hidden;
-    background-image: url('https://img.freepik.com/vector-gratis/tema-san-valentin-corazones-cielo-rosa_1308-38030.jpg?t=st=1731717320~exp=1731720920~hmac=4642ed233281a4f8a6b2494d2933d447c4454be386a77fe35f6f8cca2ea62df6&w=1060');
+    background-image: url('./Images/fondo.png');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
