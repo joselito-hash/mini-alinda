@@ -70,8 +70,7 @@ function obtenerFechaObjetivo() {
 
 const countDownDate = obtenerFechaObjetivo().getTime();
 
-// Click en el corazÃ³n: descarga o muestra mensaje
-document.querySelector('.heart').addEventListener('click', function () {
+function intentarAbrirCarta() {
   const ahora = new Date().getTime();
 
   if (ahora >= countDownDate) {
@@ -96,7 +95,9 @@ document.querySelector('.heart').addEventListener('click', function () {
     // AÃºn no es hora ðŸ’•
     mostrarMensajeEspera();
   }
-});
+}
+
+document.querySelector('.heart').addEventListener('click', intentarAbrirCarta);
 
 // â”€â”€â”€ Countdown display â”€â”€â”€
 function actualizarCountdown() {
