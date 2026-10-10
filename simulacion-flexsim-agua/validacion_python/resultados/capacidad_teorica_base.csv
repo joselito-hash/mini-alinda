@@ -1,0 +1,6 @@
+estacion,tiempo_medio_min,servidores,disponibilidad,capacidad_bot_h,carga_bot_h,utilizacion_teorica
+Llenado,0.3667,1,1.0,163.6364,125.0,0.7639
+Tapado,0.29,1,0.9424,194.981,125.0,0.6411
+Etiquetado,0.44,1,1.0,136.3636,125.0,0.9167
+Inspeccion,0.33,1,1.0,181.8182,125.0,0.6875
+Empaque,0.6667,2,1.0,180.0,120.0,0.6667
