@@ -1,0 +1,13 @@
+variable,unidad,metodo_obtencion,distribucion,parametros,expresion_flexsim,media,capacidad_bot_h,objeto_flexsim,propiedad_flexsim
+Tiempo entre llegadas,minutos,Cronometraje,Exponencial,media=0.48,"exponential(0, 0.48, getstream(current))",0.48,125 (tasa de llegada),Recepcion_MP (Source),Inter-Arrival Time
+Tiempo de llenado,minutos,Cronometraje,Triangular,"min=0.30, moda=0.35, max=0.45","triangular(0.30, 0.45, 0.35, getstream(current))",0.3667,163.6,Llenado (Processor),Process Time
+Tiempo de tapado,minutos,Cronometraje,Uniforme,"a=0.25, b=0.33","uniform(0.25, 0.33, getstream(current))",0.29,206.9 (195.0 con fallas),Tapado (Processor),Process Time
+Tiempo entre fallas de la tapadora,minutos,Registro de mantenimiento,Exponencial,media=60,"exponential(0, 60, getstream(current))",60,,MTBF MTTR (Tapado),Up Time
+Tiempo de reparación de la tapadora,minutos,Registro de mantenimiento,Triangular,"min=2, moda=3, max=6","triangular(2, 6, 3, getstream(current))",3.667,,MTBF MTTR (Tapado),Down Time
+Tiempo de etiquetado,minutos,Cronometraje,Triangular,"min=0.38, moda=0.42, max=0.52","triangular(0.38, 0.52, 0.42, getstream(current))",0.44,136.4,Etiquetado (Processor),Process Time
+Tiempo de inspección,minutos,Cronometraje,Normal,"media=0.33, desv=0.03","normal(0.33, 0.03, getstream(current))",0.33,181.8,Inspeccion (Processor + Inspector),Process Time
+Tiempo de empaque,minutos,Cronometraje,Triangular,"min=0.55, moda=0.65, max=0.80","triangular(0.55, 0.80, 0.65, getstream(current))",0.6667,180.0 (2 empacadores),Empaque (Processor + 2 operarios),Process Time
+Botellas defectuosas,% de inspeccionadas,Registro de calidad,Bernoulli,p(defecto)=4 %,"bernoulli(96, 1, 2, getstream(current))",0.04,,Inspeccion (Processor),Send To Port
+Número de operadores,personas,Observación,Constante,1 inspector + 2 empacadores,,3,,Inspector / Empacador_1 / Empacador_2 (Operator),
+Capacidad de las colas,botellas,Registro/observación,Constante,"Almacén 1000; antes de Tapado 15; antes de Etiquetado 20; antes de Inspección 15; antes de Empaque 20",,,,Queues,Maximum Content
+Duración de la corrida,minutos,Definición del estudio,Constante,1 turno de 8 h,,480,,Run time / Experimenter,Stop Time

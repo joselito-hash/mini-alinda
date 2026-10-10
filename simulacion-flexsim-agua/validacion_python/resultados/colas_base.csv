@@ -1,0 +1,6 @@
+cola,capacidad,contenido_promedio,contenido_maximo_prom,contenido_maximo_abs,espera_promedio_min
+Almacen_MP,1000,1.2486,11.4333,17.0,0.5994
+Buffer_Tapado,15,0.7397,11.9,15.0,0.3535
+Buffer_Etiquetado,20,4.343,16.8,20.0,2.0882
+Buffer_Inspeccion,15,0.0,1.0,1.0,0.0
+Buffer_Empaque,20,0.0001,1.0,1.0,0.0

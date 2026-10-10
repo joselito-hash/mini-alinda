@@ -1,0 +1,79 @@
+
+=== 1. Base (situación actual) (30 réplicas de 480 min)
+  Botellas terminadas/h : 117.9 ± 1.4
+  Defectuosas/h         : 5.0
+  Tiempo en sistema     : 5.16 ± 0.38 min
+  WIP promedio          : 10.6 botellas
+  Llenado     util  75.8%  bloq   0.1%  falla  0.0% | cola antes (Almacen_MP) prom   1.25 máx   11.4
+  Tapado      util  59.9%  bloq   0.7%  falla  6.0% | cola antes (Buffer_Tapado) prom   0.74 máx   11.9
+  Etiquetado  util  90.4%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Etiquetado) prom   4.34 máx   16.8
+  Inspeccion  util  67.7%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Inspeccion) prom   0.00 máx    1.0
+  Empaque     util  65.6%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Empaque) prom   0.00 máx    1.0
+
+=== 2. Capacidad máxima (alimentación saturada) (30 réplicas de 480 min)
+  Botellas terminadas/h : 130.2 ± 0.4
+  Defectuosas/h         : 5.3
+  Tiempo en sistema     : 133.00 ± 1.34 min
+  WIP promedio          : 630.8 botellas
+  Llenado     util  85.8%  bloq  14.2%  falla  0.0% | cola antes (Almacen_MP) prom 594.88 máx 1000.0
+  Tapado      util  66.9%  bloq  25.2%  falla  6.5% | cola antes (Buffer_Tapado) prom  12.63 máx   15.0
+  Etiquetado  util  99.6%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Etiquetado) prom  18.15 máx   20.0
+  Inspeccion  util  74.7%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Inspeccion) prom   0.00 máx    1.0
+  Empaque     util  72.4%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Empaque) prom   0.00 máx    1.0
+
+=== 3. Segunda etiquetadora (30 réplicas de 480 min)
+  Botellas terminadas/h : 118.8 ± 1.7
+  Defectuosas/h         : 5.0
+  Tiempo en sistema     : 3.22 ± 0.11 min
+  WIP promedio          : 6.6 botellas
+  Llenado     util  76.1%  bloq   0.1%  falla  0.0% | cola antes (Almacen_MP) prom   1.21 máx   10.1
+  Tapado      util  60.1%  bloq   0.0%  falla  6.4% | cola antes (Buffer_Tapado) prom   0.74 máx   12.0
+  Etiquetado  util  45.5%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Etiquetado) prom   0.00 máx    1.0
+  Inspeccion  util  68.3%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Inspeccion) prom   0.28 máx    5.4
+  Empaque     util  66.1%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Empaque) prom   0.05 máx    1.9
+
+=== 4. Demanda +20 % (30 réplicas de 480 min)
+  Botellas terminadas/h : 129.0 ± 0.4
+  Defectuosas/h         : 5.7
+  Tiempo en sistema     : 27.33 ± 2.37 min
+  WIP promedio          : 67.8 botellas
+  Llenado     util  85.2%  bloq  12.1%  falla  0.0% | cola antes (Almacen_MP) prom  34.21 máx   90.8
+  Tapado      util  66.6%  bloq  23.2%  falla  6.2% | cola antes (Buffer_Tapado) prom  11.26 máx   15.0
+  Etiquetado  util  99.1%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Etiquetado) prom  17.30 máx   20.0
+  Inspeccion  util  74.3%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Inspeccion) prom   0.00 máx    1.0
+  Empaque     util  71.7%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Empaque) prom   0.00 máx    1.0
+
+=== 5. Demanda +20 % con 2 etiquetadoras (30 réplicas de 480 min)
+  Botellas terminadas/h : 142.9 ± 1.5
+  Defectuosas/h         : 5.8
+  Tiempo en sistema     : 5.11 ± 0.37 min
+  WIP promedio          : 12.7 botellas
+  Llenado     util  91.4%  bloq   0.5%  falla  0.0% | cola antes (Almacen_MP) prom   5.00 máx   21.7
+  Tapado      util  72.2%  bloq   0.0%  falla  6.7% | cola antes (Buffer_Tapado) prom   1.50 máx   13.8
+  Etiquetado  util  54.7%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Etiquetado) prom   0.00 máx    1.0
+  Inspeccion  util  81.9%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Inspeccion) prom   0.90 máx    8.2
+  Empaque     util  79.5%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Empaque) prom   0.13 máx    2.5
+
+=== 6. Buffers reducidos (5 botellas) (30 réplicas de 480 min)
+  Botellas terminadas/h : 118.2 ± 1.2
+  Defectuosas/h         : 5.0
+  Tiempo en sistema     : 5.88 ± 0.71 min
+  WIP promedio          : 12.1 botellas
+  Llenado     util  76.0%  bloq   5.6%  falla  0.0% | cola antes (Almacen_MP) prom   3.13 máx   16.6
+  Tapado      util  59.9%  bloq  12.4%  falla  6.4% | cola antes (Buffer_Tapado) prom   1.71 máx    5.0
+  Etiquetado  util  90.6%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Etiquetado) prom   2.84 máx    5.0
+  Inspeccion  util  67.9%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Inspeccion) prom   0.00 máx    1.0
+  Empaque     util  65.8%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Empaque) prom   0.00 máx    1.0
+
+=== 7. Tapadora sin fallas (mantenimiento preventivo) (30 réplicas de 480 min)
+  Botellas terminadas/h : 118.2 ± 1.3
+  Defectuosas/h         : 4.8
+  Tiempo en sistema     : 4.05 ± 0.24 min
+  WIP promedio          : 8.3 botellas
+  Llenado     util  75.8%  bloq   0.0%  falla  0.0% | cola antes (Almacen_MP) prom   1.21 máx   10.5
+  Tapado      util  59.9%  bloq   0.1%  falla  0.0% | cola antes (Buffer_Tapado) prom   0.01 máx    1.3
+  Etiquetado  util  90.4%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Etiquetado) prom   2.86 máx   13.8
+  Inspeccion  util  67.7%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Inspeccion) prom   0.00 máx    1.0
+  Empaque     util  65.7%  bloq   0.0%  falla  0.0% | cola antes (Buffer_Empaque) prom   0.00 máx    1.0
+
+Gráficas guardadas en /home/user/mini-alinda/simulacion-flexsim-agua/validacion_python/resultados

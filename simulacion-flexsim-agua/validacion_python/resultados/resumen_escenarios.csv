@@ -1,0 +1,8 @@
+escenario,throughput_h,throughput_h_ic95,defectuosas_h,defectuosas_h_ic95,terminadas,terminadas_ic95,tiempo_sistema_prom,tiempo_sistema_prom_ic95,wip_prom,wip_prom_ic95,Etiquetado_procesando,Etiquetado_procesando_ic95,Buffer_Etiquetado_prom,Buffer_Etiquetado_prom_ic95,Buffer_Etiquetado_max,Buffer_Etiquetado_max_ic95,Almacen_MP_prom,Almacen_MP_prom_ic95,Llenado_bloqueado,Llenado_bloqueado_ic95
+1. Base (situación actual),117.9208,1.3723,4.9542,0.2428,943.3667,10.9783,5.1634,0.3782,10.5887,0.8856,0.9037,0.0101,4.343,0.6469,16.8,1.2725,1.2486,0.109,0.0007,0.0009
+2. Capacidad máxima (alimentación saturada),130.1625,0.3591,5.2875,0.3568,1041.3,2.8726,132.9963,1.336,630.7707,6.7385,0.9962,0.0011,18.1491,0.1755,20.0,0.0,594.883,6.6722,0.1415,0.0014
+3. Segunda etiquetadora,118.8167,1.6987,5.0042,0.3092,950.5333,13.5894,3.2184,0.1134,6.5624,0.2826,0.4551,0.006,0.0,0.0,1.0,0.0,1.2143,0.1092,0.0006,0.0005
+4. Demanda +20 %,128.9875,0.3948,5.7417,0.3222,1031.9,3.1583,27.3292,2.3654,67.8126,6.3112,0.9906,0.0022,17.3027,0.3139,20.0,0.0,34.2067,5.8383,0.1208,0.0071
+5. Demanda +20 % con 2 etiquetadoras,142.9,1.5175,5.7958,0.2986,1143.2,12.1404,5.1084,0.3714,12.6628,0.9942,0.5466,0.0056,0.0,0.0,1.0,0.0,4.9999,0.74,0.0051,0.0026
+6. Buffers reducidos (5 botellas),118.1833,1.1882,5.0125,0.329,945.4667,9.5052,5.8768,0.7133,12.1196,1.5666,0.9056,0.0091,2.8425,0.2044,5.0,0.0,3.1301,1.0925,0.0561,0.0121
+7. Tapadora sin fallas (mantenimiento preventivo),118.2,1.3315,4.7542,0.2477,945.6,10.652,4.05,0.2372,8.332,0.5499,0.9045,0.0103,2.8577,0.4518,13.8,1.5267,1.2132,0.0898,0.0,0.0

@@ -1,0 +1,7 @@
+fecha,turno,observador,estacion,num_observacion,hora_inicio,hora_fin,duracion_min,botella_conforme(S/N),observaciones
+,,,Llegadas (tiempo entre llegadas),1,,,,,
+,,,Llenado,1,,,,,
+,,,Tapado,1,,,,,
+,,,Etiquetado,1,,,,,
+,,,Inspección,1,,,,,
+,,,Empaque,1,,,,,
